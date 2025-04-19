@@ -65,7 +65,10 @@ num_neurons_dense: 256
 
 **After increasing epochs from 6 to 10 with respect to above hyper parameters,i observed that some validation accuracy has been increases(i.e 42.27)**
 
-main_part_a_test.ipynb
+**ASS2_PART_A_test.ipynb**
+
 This file does the testing of our model using the test data. The model trained using the best hyperparameters sweeped from wandb is used for testing.
-Test accuracy: 39.30%
+
+**Test accuracy: 43.15**
+
 3 random images from each class in the test folder were plotted along with their actual and predicted name.The plot was logged into wandb.
