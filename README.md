@@ -62,7 +62,7 @@ learning_rate: 0.0001
 
 num_neurons_dense: 256
 
-**Note:**After increasing epochs from 6 to 10,i observed that some validation accuracy has been increases(i.e 42.27)
+Note:After increasing epochs from 6 to 10 with respect to above hyper parameters,i observed that some validation accuracy has been increases(i.e 42.27)
 
 main_part_a_test.ipynb
 This file does the testing of our model using the test data. The model trained using the best hyperparameters sweeped from wandb is used for testing.
