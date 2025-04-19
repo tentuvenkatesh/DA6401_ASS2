@@ -1,6 +1,6 @@
 In this Repo,there are two Parts(i.e Part_A and Part_B)
 
-Wandb report link:(https://api.wandb.ai/links/tentuvenkatesh2-indian-institute-of-technology-madras/t1j1l0tm)
+Wandb report link:(https://api.wandb.ai/links/tentuvenkatesh2-indian-institute-of-technology-madras/8ce5w7pa)
 
 **Part_A - Training from Scratch**
 
