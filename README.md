@@ -1,7 +1,9 @@
 In this Repo,there are two Parts(i.e Part_A and Part_B)
 
-**ass2_part_a.ipynb:**
+
 **Part_A - Training from Scratch**
+
+**ass2_part_a.ipynb:**
 
 Here I implement a 5 layer CNN network from scratch using PyTorch library and train it using inaturalist dataset.
 
@@ -10,31 +12,55 @@ The file has been trained in Kaggle where I have uploaded my dataset in kaggle a
 Below are the sweep configurations,which i used for the sweep with count=20.
 
 Wandb sweep Coonfigurations:
+
 filters_num :[16, 32, 64]
+
 filter_org :['same', 'double', 'half']
+
 act_fn :['relu', 'gelu', 'silu', 'mish', 'tanh']
+
 data_aug : [False]
+
 batch_norm:[True, False]
+
 dropout:[0, 0.2, 0.5]
+
 learning_rate:[1e-3, 1e-4]
+
 l2_reg:[0, 0.0005, 0.05]
+
 batch_size:[16, 32]
+
 kernel_size: [[3]*5, [3, 5, 5, 7, 7], [5]*5, [7, 5, 5, 3, 3] ]
+
 num_neurons_dense:[64, 128, 256]
+
 epochs: [6]
 
 **Best hyperparameters,which gave best validation accuracy:39.46974**
+
 act_fn: relu
+
 batch_norm: True
+
 batch_size: 32
+
 data_aug: False
+
 dropout: 0
+
 epochs: 6
+
 filter_org: double
+
 filters_num: 64
+
 kernel_size: [3, 3, 3, 3, 3]
+
 l2_reg: 0.0005
+
 learning_rate: 0.0001
+
 num_neurons_dense: 256
 
 **After increasing epochs from 6 to 10 with respect to above hyper parameters,i observed that some validation accuracy has been increases(i.e 42.27)**
