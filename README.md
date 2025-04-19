@@ -36,7 +36,7 @@ num_neurons_dense:[64, 128, 256]
 
 epochs: [6]
 
-After running above configuration,below are the best hyperparameters,which gave best validation accuracy:39.46974
+**Best hyperparameters,which gave best validation accuracy:39.46974**
 
 act_fn: relu
 
