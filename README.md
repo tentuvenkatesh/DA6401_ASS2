@@ -1,9 +1,10 @@
 In this Repo,there are two Parts(i.e Part_A and Part_B)
 
+Wandb report link:
 
 **Part_A - Training from Scratch**
 
-**ass2_part_a.ipynb:**
+**ass2-part-a.ipynb:**
 
 Here I implement a 5 layer CNN network from scratch using PyTorch library and train it using inaturalist dataset.
 
@@ -75,4 +76,40 @@ This file does the testing of our model using the test data. The model trained u
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Part_B:**
+**Part_B:Fine-tuning a pre-trained model**
+
+I used resnet50 model as the pre-trained model and fine-tune it using the inaturalist data.
+
+**ass2-part-b.ipynb:**
+First I loaded the resnet50 model from torchvision.models, then I finetuned it using different types of strategies. Found the best hyperparameters using wandb sweep,and The file has been trained in Kaggle.
+
+**Wandb sweep configurations:**
+lr:[1e-3, 1e-4]
+
+freeze_percent[0.2, 0.6, 0.9]
+
+l2_reg : [0, 0.0005, 0.05]
+
+batch_size:[32, 64]
+
+epochs : [5, 10]
+
+**Best Hyper parameters i found was:**
+
+lr:  0.0001
+
+freeze_percent:  0.9
+
+l2_reg : 0
+
+batch_size:64
+
+epochs : 10
+
+**After 20 sweeps,with respect to above hyperparameters i got better validataion accuracy,which is 78.93948**
+
+**ass2-art-b-test.ipynb:**
+
+This file does the testing of our fine-tuned model using the test data. The model trained using the best hyperparameters sweeped from wandb is used for testing.
+
+**Test accuracy: 79.30%**
