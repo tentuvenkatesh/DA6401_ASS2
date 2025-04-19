@@ -72,3 +72,7 @@ This file does the testing of our model using the test data. The model trained u
 **Test accuracy: 43.15**
 
 3 random images from each class in the test folder were plotted along with their actual and predicted name.The plot was logged into wandb.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Part_B:**
